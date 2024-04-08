@@ -7,7 +7,7 @@ namespace DatabaseLibrary
     {
         #region Const
         //34.142.246.158
-        private const string connString = "Server=localhost;Database=sogogo_db;Uid=superadmin;Pwd=eYLmqpFhuS*1iWlm;Pooling=true;MinPoolSize=5;MaxPoolSize=100;ConnectionLifetime=60;ConnectionReset=true;";
+        private const string connString = "Server=localhost;Database=bokemium_db;Uid=superadmin;Pwd=eYLmqpFhuS*1iWlm;Pooling=true;MinPoolSize=5;MaxPoolSize=100;ConnectionLifetime=60;ConnectionReset=true;";
         #endregion
 
         private static IEnumerable<string> GetParams(string input)

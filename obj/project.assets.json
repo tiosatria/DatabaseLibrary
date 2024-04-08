@@ -564,6 +564,16 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "StringUtilLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/StringUtilLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StringUtilLib.dll": {}
+        }
       }
     }
   },
@@ -1847,13 +1857,19 @@
         "zstdsharp.port.0.7.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "StringUtilLib/1.0.0": {
+      "type": "project",
+      "path": "../../../source/repos/bokemium/StringUtilLib/StringUtilLib.csproj",
+      "msbuildProject": "../../../source/repos/bokemium/StringUtilLib/StringUtilLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Dapper >= 2.1.28",
       "Dapper.Transaction >= 2.1.28",
-      "MySql.Data >= 8.3.0"
+      "MySql.Data >= 8.3.0",
+      "StringUtilLib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1888,7 +1904,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\BUAH DZAKAR\\source\\repos\\bokemium\\StringUtilLib\\StringUtilLib.csproj": {
+              "projectPath": "C:\\Users\\BUAH DZAKAR\\source\\repos\\bokemium\\StringUtilLib\\StringUtilLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

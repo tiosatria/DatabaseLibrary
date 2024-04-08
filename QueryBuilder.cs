@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using Dapper.Transaction;
 using MySql.Data.MySqlClient;
-using UtilitiesLibrary;
 
 namespace DatabaseLibrary;
 
