@@ -47,7 +47,8 @@ namespace DatabaseLibrary
 
         public static async Task<IDbFetchSingleAsync> FetchSingleAsync(this IDbFetchSingleAsync obj)
         {
-
+            throw new NotImplementedException();
+            
         } 
 
 

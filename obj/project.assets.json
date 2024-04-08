@@ -1860,8 +1860,8 @@
     },
     "StringUtilLib/1.0.0": {
       "type": "project",
-      "path": "../../../source/repos/bokemium/StringUtilLib/StringUtilLib.csproj",
-      "msbuildProject": "../../../source/repos/bokemium/StringUtilLib/StringUtilLib.csproj"
+      "path": "../bokemium/StringUtilLib/StringUtilLib.csproj",
+      "msbuildProject": "../bokemium/StringUtilLib/StringUtilLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1879,11 +1879,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BUAH DZAKAR\\Desktop\\i\\DatabaseLibrary\\DatabaseLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\BUAH DZAKAR\\source\\repos\\DatabaseLibrary\\DatabaseLibrary.csproj",
       "projectName": "DatabaseLibrary",
-      "projectPath": "C:\\Users\\BUAH DZAKAR\\Desktop\\i\\DatabaseLibrary\\DatabaseLibrary.csproj",
+      "projectPath": "C:\\Users\\BUAH DZAKAR\\source\\repos\\DatabaseLibrary\\DatabaseLibrary.csproj",
       "packagesPath": "C:\\Users\\BUAH DZAKAR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BUAH DZAKAR\\Desktop\\i\\DatabaseLibrary\\obj\\",
+      "outputPath": "C:\\Users\\BUAH DZAKAR\\source\\repos\\DatabaseLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

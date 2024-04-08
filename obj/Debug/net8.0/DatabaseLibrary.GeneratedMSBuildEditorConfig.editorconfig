@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DatabaseLibrary
-build_property.ProjectDir = C:\Users\BUAH DZAKAR\Desktop\i\DatabaseLibrary\
+build_property.ProjectDir = C:\Users\BUAH DZAKAR\source\repos\DatabaseLibrary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
