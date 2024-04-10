@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DatabaseLibrary.Interfaces
 {
-
-    public interface IDbEntity
+    public interface IDbFetchListAsync : IDbEntity, IDbFetchSingleAsync
     {
-        string TableName { get; }
+        int Limit { get; }
     }
 }

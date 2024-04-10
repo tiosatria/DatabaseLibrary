@@ -1,8 +1,9 @@
 ﻿
 namespace DatabaseLibrary.Interfaces
 {
+    public record struct FetchQuery(string? cols, string? condition, object? param);
     public interface IDbFetchSingleAsync : IDbEntity
     {
-        Type objType { get; }
+        FetchQuery FetchQuery { get; }
     }
 }
