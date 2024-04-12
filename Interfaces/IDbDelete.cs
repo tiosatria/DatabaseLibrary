@@ -17,9 +17,10 @@ namespace DatabaseLibrary.Interfaces
 
     public record struct DeleteCondition(string deleteCondition, object? deleteParam);
 
-    public interface IDbDeleteAsync : IDbEntity
+    public interface IDbDelete : IDbEntity
     {
         DeleteConfig Config { get; }
         DeleteCondition Condition { get; } 
     }
+
 }

@@ -1,9 +1,9 @@
 ﻿
 namespace DatabaseLibrary.Interfaces
 {
-    public interface IDbUpdateAsync : IDbEntity
+    public interface IDbUpdate : IDbEntity
     {
         Dictionary<string, object?> UpdateData { get; }
-        string updateCondition { get; }
+        string updateCondition { get;  }
     }
 }

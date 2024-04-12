@@ -8,7 +8,6 @@ namespace DatabaseLibrary
 {
     public static class Extension
     {
-
         private static object MakeAnonymousObject(Dictionary<string, object?> objects)
         {
             var obj = new ExpandoObject() as IDictionary<string, object?>;
@@ -19,7 +18,7 @@ namespace DatabaseLibrary
             return obj;
         }
 
-        public static async Task<bool> InsertAsync(this IDbInsertAsync obj)
+        public static async Task<bool> InsertAsync(this IDbInsert obj)
         {
             var keys = obj.InsertData.Select(e => e.Key).ToString();
             var parameters = obj.InsertData.Select(e => e.Key).ToString(prefixer: "@");
@@ -29,7 +28,7 @@ namespace DatabaseLibrary
             return await t.FinishTransactionAsync(inserted);
         }
 
-        public static async Task<bool> UpdateAsync(this IDbUpdateAsync obj)
+        public static async Task<bool> UpdateAsync(this IDbUpdate obj)
         {
             var updates = obj.UpdateData.Select(e => $"{e.Key} = @{e.Key}").ToString();
             var sql = $"UPDATE {obj.TableName} SET {updates} WHERE {obj.updateCondition};";
@@ -38,7 +37,7 @@ namespace DatabaseLibrary
             return await t.FinishTransactionAsync(updated);
         }
 
-        public static async Task<bool> DeleteAsync(this IDbDeleteAsync obj)
+        public static async Task<bool> DeleteAsync(this IDbDelete obj)
         {
             var sql = $"DELETE FROM {obj.TableName} WHERE {obj.Condition.deleteCondition}";
             await using var t = await new Transaction().InitAsync();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseLibrary.Interfaces
 {
-    public interface IDbInsertAsync : IDbEntity
+    public interface IDbInsert : IDbEntity
     {
         Dictionary<string, object?> InsertData { get; }
     }
